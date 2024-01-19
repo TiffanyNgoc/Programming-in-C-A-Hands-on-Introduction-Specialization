@@ -79,19 +79,17 @@ public:
 // add class definitions below this line
 
 class Child : public Parent2 {
-public:
-    string Identify() override {
-        return "This function is called from Child";
+  public:
+    string Identify() {
+      return "This function is called from Child";
     }
-
+  
     string Identify2() {
-        // Invoking Identify function from Parent2
-        return Parent2::Identify();
+      return Parent2::Identify();
     }
-
+  
     string Identify3() {
-        // Invoking Identify function from Parent1
-        return Parent1::Identify();
+      return Parent1::Identify();
     }
 };
 
